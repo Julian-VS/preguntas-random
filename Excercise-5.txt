@@ -1,0 +1,16 @@
+1. How do you see the files changed within each commit from git log?
+
+	You can see the files changed within each commit from git log by typing the command "git log". It will return the timeline of every commit of a specific file.
+	The oldest commit will be down at the bottom of the response, and as you scroll up the newer the commit is.
+	The response basically is a recollection of chronological order commit list. Each item is composed by 3 lines: 1) Commit ref. 2) Author. 3) Date. And at the end the commit 
+	message itself.
+
+2. How do you see the contents of what changed within each file from the git log?
+
+	You can see what changed within each file from the git log by typing "git log --patch". The response to this command will be similar to the previous one but in addition
+	it will tell the difference made between the versions, sepcifying the lines added (in green) or substracted (in red).
+	There is a short version to it by adding at the end of the command "... --oneline". This will show the summarized version of this log. 
+
+3. What does HEAD refer to in the context of git? (Not to be confused with the "HEAD<<<<" one observes within merge conflict)
+
+	HEAD refers to the last commit made in the working directory.
